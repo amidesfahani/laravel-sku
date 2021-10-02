@@ -46,6 +46,8 @@ trait HasSku
      */
     public function getSkuAttribute($value)
     {
-        return (string) $value ?: $this->getAttribute($this->skuOption('field'));
+        return $value;
+        // prevent n+1 probmel!
+        // return (string) $value ?: $this->getAttribute($this->skuOption('field'));
     }
 }
