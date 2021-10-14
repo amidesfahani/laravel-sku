@@ -19,7 +19,8 @@ class SkuMacro
         return function ($source, $separator = null) {
             $separator = $separator ?: config('laravel-sku.default.separator');
             // Clean up the source
-            $source = preg_replace('/[^\00-\255]+/u', '', $source);
+            // $source = preg_replace('/[^\00-\255]+/u', '', $source);
+            $source = preg_replace("/[^A-Za-z0-9]/", '', $source);
             $source = Str::studly($source);
             // Limit the source
             $source = Str::limit($source, 3, '');
