@@ -203,14 +203,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information about what has changed
 composer test
 ```
 
-## Security
-
-If you discover any security related issues, please email cyrill.kalita@gmail.com instead of using issue tracker.
-
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
 ## Credits (Original Package)
 
 - [Cyrill Kalita](https://github.com/binary-cats)
